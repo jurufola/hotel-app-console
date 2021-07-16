@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "prenom":"Moulaye",
+        "nom": "HAïdara"
+    },
+    {
+        "id": 2,
+        "prenom":"Many",
+        "nom": "Thera"
+    },
+    {
+        "id": 3,
+        "prenom":"Aman Moulaye",
+        "nom": "HAïdara"
+    },
+    {
+        "id": 4,
+        "prenom":"Awa Moulaye",
+        "nom": "HAïdara"
+    },
+    {
+        "id": 5,
+        "prenom":"Maïmouna Moulaye",
+        "nom": "HAïdara"
+    }
+]

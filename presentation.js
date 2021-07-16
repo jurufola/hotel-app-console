@@ -6,6 +6,9 @@
  output: process.stdout
  });
 
+ // Recuperation Objet services
+ var service = require('./service');
+
 function start() {
     affichMenu();
    
@@ -27,6 +30,7 @@ function traiterSaisie(reponse){
                     rl.close();
                     return;
         case '1' : console.log('Liste des clients');
+                    service.listeClients();
                    break;
         default : console.log('Choix non disponible');
     }
