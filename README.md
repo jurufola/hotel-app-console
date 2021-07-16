@@ -1,2 +1,2 @@
 # hotel-app-console
-Application console pour exploiter des services webs
+Application console pour exploiter des services webs avec NodeJS
