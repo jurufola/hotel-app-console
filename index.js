@@ -1,7 +1,7 @@
 console.log('** Administration Hotel **');
-var presentation = require('./presentation');
+const presentation = require('./presentation');
 
-var start = presentation.start();
+const start = presentation.start();
 presentation.affichMenu();
 
 const clients = require('./clients.json');

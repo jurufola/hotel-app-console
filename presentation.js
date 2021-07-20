@@ -1,14 +1,14 @@
  // récupération du module `readline`
- var readline = require('readline');
+ const readline = require('readline');
  // création d'un objet `rl` permettant de récupérer la saisie utilisateur
- var rl = readline.createInterface({
+ const rl = readline.createInterface({
  input: process.stdin,
  output: process.stdout
  });
  
-
+import Service from './service';
  // Recuperation Objet services
- var service = require('./service');
+ const service = new Service();
 
  function start() {
     // affichMenu();
