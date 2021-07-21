@@ -6,9 +6,12 @@
  output: process.stdout
  });
  
-import Service from './service';
+//import Service from 'services'; Ne fonctionne pas
+const serviceClass = require('./services');
+const service = new serviceClass.Service();
+
  // Recuperation Objet services
- const service = new Service();
+ //const service = new Service();
 
  function start() {
     // affichMenu();
@@ -52,7 +55,14 @@ import Service from './service';
                      console.log('fin case 99')
                      return;
          case '1' : console.log('Liste des clients');
-                     service.listeClients();
+                     service.listeClients().then(response => {
+                       // console.log(response.body);
+                       console.log("je suis dans le then");
+                       console.log(response);
+                     }).catch(err=>{
+                        //console.log(err);
+                        console.log('je suis dans le catch')
+                     });
                      console.log('fin case 1');
                      execute();
                      break;
